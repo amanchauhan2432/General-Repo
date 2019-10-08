@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Latex</title>
+<style>
+div {
+  margin-right: 250px;
+  margin-left: 250px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+</style>
+</head>
+	<body>
+		<center><h1>Latex Tutorial</h1>
+			Welcome to this tutorial.This tutorial helps you to understand the basics of Latex.<br></center>
+		<div style="float:left"><a href="https://github.com/amanchauhan2432" target="b">Github Link</a></div>
+		<div style="float:right"><a href="https://www.latex-tutorial.com/tutorials/" target="b">Source Link</a></div><br>
+		<hr><hr>
+<div>
+<h1>IMAGES</h1>
+<p>From time to time, it's necessary to add pictures to your documents. Using LaTeX all pictures will be indexed automatically and tagged with successive numbers when using the figure environment and the graphicx package.</p>
+<center><img src="image14.png"></center>
+<p>The figure environment takes care of the numbering and positioning of the image within the document. In order to include a figure, you must use the \includegraphics command. It takes the image width as an option in brackets and the path to your image file. As you can see, I put \linewidth into the brackets, which means the picture will be scaled to fit the width of the document. </p>
+<h2>Multiple images / subfigures in LaTeX</h2>
+<p>Sometimes when writing a document, adding single images is not optimal, especially when the reader is supposed to compare several results or graphs. In such situations, it might be necessary to use a different environment, called subfigure. The subfigure environment allows you to place multiple images at a certain location next to each other and the usage is pretty straightforward.
+First you need to add the subcaption package to your preamble:</p>
+<center><img src="image15.png"></center>
+<p>there are two images aligned next to each other, their widths are both set to 0.4, yet they fill up the whole space. You should always set this value to .1 less than you expect. If you want to align three images next to each other, you should consecutively add three subfigures, each with a 0.2\linewidth. I suggest, if you need some other arrangement, you simply play around with the width factor until you are satisfied with the result. A more elaborate example with multiple rows and columns could look like this:</p>
+<center><img src="image16.png"></center>
+<h2>SUMMARY</h2>
+    <ul><li>Use the graphicx package and figure environment to embed pictures</li></ul>
+    <li>Pictures will be numbered automatically</li>
+    <li>Change the width of your image by using \includegraphics[width=\linewidth]{}</li>
+    <li>Refer to pictures in your document by setting a \label and using the \ref tag</li>
+    <li>Set the position of your image by adding a float option such as [h!]</li>
+    <li>If you want to show multiple figures next to each other, use the subcaption package and the subfigure environment</li></ul>
+<div style="float:right"><a href="file:///root/Documents/Latex/latex%206.html">>>>>>Tables</a></div>
+</div></body
+</html>
