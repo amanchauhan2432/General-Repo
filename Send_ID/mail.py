@@ -25,7 +25,7 @@ mail.ehlo()
 
 mail.starttls()
 
-mail.login('gndeciste@gmail.com','gndecisterules')
+mail.login('gndeciste@gmail.com','!STE@Dhingr@')
 
 for i in mail_list:
     msg = f"""\
