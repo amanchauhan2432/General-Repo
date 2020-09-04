@@ -10,7 +10,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json',sc
 
 client = gspread.authorize(creds)
 
-sheet = client.open("It's All About Experimenting").sheet1
+sheet = client.open("Google Sheet Name").sheet1
 
 mail_list = sheet.col_values(2)
 
@@ -25,18 +25,12 @@ mail.ehlo()
 
 mail.starttls()
 
-mail.login('gndeciste@gmail.com','!STE@Dhingr@')
+mail.login('Email','Password')
 
 for i in mail_list:
     msg = f"""\
-Hello ISTE welcomes you in our Episode 2 -> It's All About Experimenting of ISTE Growth Series.
-
-In this webinar you will get to know about how to create a real project from scratch and launch in Market and Earn Money
-
-So Please Join The Webinar With The Given Link
-
-Meeting Link- https://meet.google.com/
+Message
 """
-    mail.sendmail('gndeciste@gmail.com',i,'Subject: Invitation Link Of Webinar.\n\n'+msg)
+    mail.sendmail('From Mail',i,'Subject: Mail Subject.\n\n'+msg)
 
 mail.quit()
